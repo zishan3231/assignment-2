@@ -177,6 +177,10 @@ button {
     margin: 15px;
 }
 
+.view-all {
+    display: none;
+}
+
 
 
 /* footer */
@@ -379,5 +383,22 @@ li a {
         grid-template-columns: repeat(2, 1fr);
         gap: 80px;
         margin-left: 100px;
+    }
+
+    .view-all {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0px 350px 0 350px;
+        padding: 20px;
+
+    }
+
+
+
+
+    .view-all button:hover {
+        background-color: #DD0000;
+
     }
 }
