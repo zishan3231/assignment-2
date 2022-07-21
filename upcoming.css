@@ -1,10 +1,17 @@
-/*import fonts url */
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@1&family=Lato&family=Poppins:wght@500&family=Roboto&family=Smooch&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     font-family: "Poppins";
+}
+
+.container {
+    width: 1321px;
+    padding: 20px;
+
+
+
 }
 
 main {
@@ -14,14 +21,8 @@ main {
 
 }
 
-.container {
-    width: 1321px;
-    padding: 20px;
-
-}
-
-/* header */
 .banner {
+
     background-color: black;
     display: flex;
     justify-content: center;
@@ -41,9 +42,6 @@ main {
 .banner-header {
     width: 531px;
     font-size: 3vw;
-
-
-
 }
 
 .button {
@@ -64,7 +62,7 @@ main {
 
 /* .banner-button, */
 .fa-arrow-right:hover {
-    width: 10px;
+    width: 5px;
     padding: 20px;
 }
 
@@ -72,6 +70,7 @@ main {
 
 .fa-arrow-right {
     margin: 10px;
+    transition: width 0.2s ease-in-out;
 
 }
 
@@ -83,14 +82,13 @@ main {
     margin-top: 520px;
 }
 
-/* menu or blogs */
 .blog-content {
     display: flex;
 }
 
 .menu {
     background-color: black;
-    height: 350px;
+    height: 300px;
     width: 100%;
     margin-top: 20px;
     border-radius: 10px;
@@ -100,15 +98,15 @@ main {
     background-color: #FFFFFF;
     margin: 30px;
     border-radius: 5px;
+    padding: 10px 60px;
     font-size: 20px;
     font-weight: 800;
-    padding: 10px 60px;
     text-align: center;
 }
 
-.blog {
+.menu-item:hover {
+
     background-color: #DD0000;
-    color: #FFFFFF;
 }
 
 .menu-item a {
@@ -116,63 +114,43 @@ main {
 
 }
 
+.upcoming {
+    background-color: #DD0000;
+
+}
 
 
 
-.icon {
+.germany-france {
     display: flex;
-    margin: 15px;
-    padding-right: 20px;
-
 }
 
-.clock {
-    padding-right: 30px;
-}
-
-.fa-message,
-.fa-clock {
-    margin-right: 10px;
-}
-
-.blog-img {
-    width: 200px;
-}
-
-.blogs {
-    border: 1px solid rgba(255, 255, 255, 0.045);
-    margin: 10px;
-}
-
-.blogs-item {
+.upcoming-match {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 10px;
-    margin-right: 140px;
-    /* width: 600px; */
+    gap: 10px;
     padding: 10px;
 
-    /* Height: 175px; */
-}
-
-.blogs {
-    width: 312px;
-    height: 362px;
 
 }
 
-button {
-    margin: 15px;
-    padding: 5px 13px;
-    border-radius: 10px;
-    font-size: 18px;
+.match {
+    margin: 20px;
+    width: 250px;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid gray;
+
 }
 
-.blog-title {
+.match-heading {
+    text-align: center;
     margin: 15px;
 }
 
-
+h3 {
+    margin: 10px;
+}
 
 /* footer */
 footer {
@@ -219,26 +197,21 @@ li a {
 
 .social-media {
     font-size: 30px;
+
     display: flex;
     justify-content: center;
 
 }
 
-
-
-
 .social-icon {
-    padding: 0px;
-    margin: 10px;
+    padding: 10px;
     color: #FFFFFF;
-    margin-top: 30px;
-
+    margin-top: 20px;
 }
 
 .social-icon:hover {
     color: #DD0000;
 }
-
 
 
 @media screen and (max-width: 576px) {
@@ -289,26 +262,24 @@ li a {
         font-size: 30px;
     }
 
-
-
     .menu-item {
         background-color: #FFFFFF;
         padding: 5px 20px;
         text-align: center;
         color: #FFFFFF;
-
     }
 
-    .blog {
+    .upcoming {
         background-color: #DD0000;
-        color: #FFFFFF;
     }
 
-    .blogs-item {
+    .upcoming-match {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 80px;
-        margin-left: 100px;
+        gap: 10px;
+        padding: 10px;
+
+
     }
 
     footer {
@@ -364,15 +335,17 @@ li a {
 
     }
 
-    .blog {
-        background-color: #DD0000;
-        color: #FFFFFF;
-    }
-
-    .blogs-item {
+    .upcoming-match {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 80px;
-        margin-left: 100px;
+        gap: 10px;
+        padding: 10px;
+
+
     }
+
+    .upcoming {
+        background-color: #DD0000;
+    }
+
 }
